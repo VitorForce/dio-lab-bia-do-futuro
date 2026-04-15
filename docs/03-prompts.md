@@ -240,5 +240,5 @@ Com esses dados, elaborarei um plano de treino adequado para você.
 
 ## 👨‍💻 Autor
 
-**GameCoach AI**  
+**FALLEN IA (PROFESSOR)**  
 Projeto desenvolvido com tecnologia de Inteligência Artificial para auxiliar jogadores a alcançarem alta performance em jogos competitivos.
