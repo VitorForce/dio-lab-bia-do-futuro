@@ -1,0 +1,26 @@
+{
+  "atualizacoes": [
+    {
+      "jogo": "Valorant",
+      "versao_patch": "8.05",
+      "data_atualizacao": "2026-03-10",
+      "mudancas": [
+        "Ajustes de economia em rodadas perdidas",
+        "Balanceamento em habilidades de duelistas",
+        "Pequenos ajustes de mapa"
+      ],
+      "impacto_meta": "Favorece execuções rápidas e melhor coordenação de entrada"
+    },
+    {
+      "jogo": "League of Legends",
+      "versao_patch": "14.6",
+      "data_atualizacao": "2026-03-06",
+      "mudancas": [
+        "Ajustes em ADCs de scaling",
+        "Nerf em itens defensivos específicos",
+        "Mudanças em ouro de objetivos"
+      ],
+      "impacto_meta": "Maior importância para controle de rota e power spikes"
+    }
+  ]
+}
