@@ -1,0 +1,44 @@
+{
+  "jogadores": [
+    {
+      "id_jogador": 1,
+      "nome": "Vitor",
+      "jogo": "Valorant",
+      "ranking": "Ouro 2",
+      "funcao": "Duelista",
+      "personagem_principal": "Jett",
+      "taxa_vitoria": 54.0,
+      "kda_medio": 1.32,
+      "objetivo": "Alcançar Platina",
+      "horas_treino_semanais": 10,
+      "pontos_fracos": [
+        "posicionamento agressivo excessivo",
+        "inconsistência no spray"
+      ],
+      "pontos_fortes": [
+        "entrada rápida",
+        "confiança em duelos curtos"
+      ]
+    },
+    {
+      "id_jogador": 2,
+      "nome": "Lucas",
+      "jogo": "League of Legends",
+      "ranking": "Prata 1",
+      "funcao": "ADC",
+      "personagem_principal": "Jinx",
+      "taxa_vitoria": 51.0,
+      "kda_medio": 2.8,
+      "objetivo": "Chegar ao Ouro",
+      "horas_treino_semanais": 8,
+      "pontos_fracos": [
+        "farm no early game",
+        "posicionamento em team fight"
+      ],
+      "pontos_fortes": [
+        "bom dano no late game",
+        "controle de wave básico"
+      ]
+    }
+  ]
+}
