@@ -1,0 +1,7 @@
+id_partida,jogador,jogo,data,resultado,mapa,abates,mortes,assistencias,kda,pontuacao_media
+1,Vitor,Valorant,2026-03-10,Vitória,Ascent,18,12,6,1.5,245
+2,Vitor,Valorant,2026-03-12,Derrota,Haven,14,16,5,1.19,210
+3,Vitor,Valorant,2026-03-14,Vitória,Bind,22,14,7,1.57,268
+4,Lucas,League of Legends,2026-03-09,Vitória,Summoner's Rift,9,4,11,5.0,198
+5,Lucas,League of Legends,2026-03-11,Derrota,Summoner's Rift,4,7,6,1.43,172
+6,Lucas,League of Legends,2026-03-13,Vitória,Summoner's Rift,11,3,9,6.67,205
