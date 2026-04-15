@@ -1,0 +1,31 @@
+{
+  "mapas": [
+    {
+      "jogo": "Valorant",
+      "mapa": "Ascent",
+      "estrategias": [
+        "Priorizar controle de meio",
+        "Usar utilitários para isolar ângulos",
+        "Executar entrada com troca imediata"
+      ]
+    },
+    {
+      "jogo": "Valorant",
+      "mapa": "Haven",
+      "estrategias": [
+        "Explorar rotações rápidas",
+        "Punir defesa espalhada",
+        "Controlar informação em pontos avançados"
+      ]
+    },
+    {
+      "jogo": "League of Legends",
+      "mapa": "Summoner's Rift",
+      "estrategias": [
+        "Controlar visão em objetivos",
+        "Sincronizar reset com dragão/heraldo",
+        "Evitar avançar sem cobertura lateral"
+      ]
+    }
+  ]
+}
