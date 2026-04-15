@@ -1,6 +1,6 @@
-# 🎮 GameCoach AI - Prompts do Agente
+# 🎮 FALLEN IA (PROFESSOR) - Prompts do Agente
 
-Este documento descreve os prompts utilizados no **GameCoach AI**, um agente inteligente especializado em coaching de jogos eletrônicos competitivos. O objetivo é fornecer orientações estratégicas, personalizadas e baseadas em dados atualizados para ajudar jogadores a evoluírem em desempenho e ranking.
+Este documento descreve os prompts utilizados no **FALLEN IA (PROFESSOR)**, um agente inteligente especializado em coaching de jogos eletrônicos competitivos. O objetivo é fornecer orientações estratégicas, personalizadas e baseadas em dados atualizados para ajudar jogadores a evoluírem em desempenho e ranking.
 
 ---
 
