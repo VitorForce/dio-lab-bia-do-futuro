@@ -1,0 +1,41 @@
+{
+  "personagens": [
+    {
+      "jogo": "Valorant",
+      "nome": "Jett",
+      "classe": "Duelista",
+      "pontos_fortes": [
+        "mobilidade",
+        "entrada agressiva",
+        "abertura de espaço"
+      ],
+      "pontos_fracos": [
+        "dependência de mecânica",
+        "punição alta em erro"
+      ],
+      "dicas": [
+        "Evite entrar sem utilidade da equipe",
+        "Use mobilidade para reposicionar, não só avançar",
+        "Treine primeiro abate e saída segura"
+      ]
+    },
+    {
+      "jogo": "League of Legends",
+      "nome": "Jinx",
+      "classe": "ADC",
+      "pontos_fortes": [
+        "excelente dano em team fight",
+        "ótimo scaling"
+      ],
+      "pontos_fracos": [
+        "baixa mobilidade",
+        "frágil no early game"
+      ],
+      "dicas": [
+        "Priorize farm consistente",
+        "Evite lutas sem visão",
+        "Guarde posicionamento para o pico de dano"
+      ]
+    }
+  ]
+}
