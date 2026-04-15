@@ -44,7 +44,69 @@ Além disso, os conjuntos de dados foram expandidos para permitir análises mais
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
+````python
+import pandas as pd
+import json
+
+# ==========================
+# Leitura de arquivos CSV
+# ==========================
+
+try:
+    historico_partidas = pd.read_csv('data/historico_partidas.csv')
+    estatisticas_jogos = pd.read_csv('data/estatisticas_jogos.csv')
+
+    print("✅ CSVs carregados com sucesso!\n")
+
+    print("📊 Histórico de Partidas:")
+    print(historico_partidas.head(), "\n")
+
+    print("📈 Estatísticas dos Jogos:")
+    print(estatisticas_jogos.head(), "\n")
+
+except FileNotFoundError as e:
+    print(f"❌ Erro ao carregar CSV: {e}")
+
+
+# ==========================
+# Leitura de arquivos JSON
+# ==========================
+
+def carregar_json(caminho):
+    try:
+        with open(caminho, 'r', encoding='utf-8') as arquivo:
+            return json.load(arquivo)
+    except FileNotFoundError:
+        print(f"❌ Arquivo não encontrado: {caminho}")
+        return None
+
+
+perfil_jogador = carregar_json('data/perfil_jogador.json')
+planos_treino = carregar_json('data/planos_treino.json')
+patch_notes = carregar_json('data/patch_notes.json')
+meta_atual = carregar_json('data/meta_atual.json')
+
+
+# ==========================
+# Exibição dos dados
+# ==========================
+
+print("👤 Perfil do Jogador:")
+if perfil_jogador:
+    print(perfil_jogador, "\n")
+
+print("🏋️ Planos de Treino:")
+if planos_treino:
+    print(planos_treino, "\n")
+
+print("🆕 Patch Notes:")
+if patch_notes:
+    print(patch_notes, "\n")
+
+print("🎮 Meta Atual:")
+if meta_atual:
+    print(meta_atual, "\n")
+``
 
 [ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
 
