@@ -1,0 +1,24 @@
+{
+  "fontes": [
+    {
+      "jogo": "Valorant",
+      "tipo": "site_oficial",
+      "url": "https://playvalorant.com/"
+    },
+    {
+      "jogo": "Valorant",
+      "tipo": "patch_notes",
+      "url": "https://playvalorant.com/pt-br/news/game-updates/"
+    },
+    {
+      "jogo": "League of Legends",
+      "tipo": "site_oficial",
+      "url": "https://www.leagueoflegends.com/pt-br/"
+    },
+    {
+      "jogo": "League of Legends",
+      "tipo": "patch_notes",
+      "url": "https://www.leagueoflegends.com/pt-br/news/game-updates/"
+    }
+  ]
+}
