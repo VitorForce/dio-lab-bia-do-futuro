@@ -1,0 +1,41 @@
+{
+  "metas": [
+    {
+      "jogo": "Valorant",
+      "patch": "8.05",
+      "tendencias": [
+        "Entradas coordenadas com duelistas móveis",
+        "Maior valor para domínio de espaço",
+        "Execuções rápidas em mapas menores"
+      ],
+      "personagens_em_alta": [
+        "Jett",
+        "Raze",
+        "Omen",
+        "Sova"
+      ],
+      "mapas_favoraveis": [
+        "Ascent",
+        "Haven"
+      ]
+    },
+    {
+      "jogo": "League of Legends",
+      "patch": "14.6",
+      "tendencias": [
+        "Prioridade para objetivos neutros",
+        "ADCs de late game em alta",
+        "Maior foco em team fight organizada"
+      ],
+      "personagens_em_alta": [
+        "Jinx",
+        "Kai'Sa",
+        "Nautilus",
+        "Orianna"
+      ],
+      "mapas_favoraveis": [
+        "Summoner's Rift"
+      ]
+    }
+  ]
+}
