@@ -1,0 +1,40 @@
+{
+  "recomendacoes": [
+    {
+      "jogo": "Valorant",
+      "categoria": "Armas",
+      "itens": [
+        {
+          "nome": "Vandal",
+          "situacao": "padrão para duelos longos e consistência"
+        },
+        {
+          "nome": "Phantom",
+          "situacao": "boa para sprays e lutas curtas"
+        },
+        {
+          "nome": "Operator",
+          "situacao": "ideal para controle de ângulo e picks"
+        }
+      ]
+    },
+    {
+      "jogo": "League of Legends",
+      "categoria": "Itens",
+      "itens": [
+        {
+          "nome": "Gume do Infinito",
+          "situacao": "power spike ofensivo"
+        },
+        {
+          "nome": "Canhão Fumegante",
+          "situacao": "alcance extra e pickoff"
+        },
+        {
+          "nome": "Anjo Guardião",
+          "situacao": "segurança em team fights decisivas"
+        }
+      ]
+    }
+  ]
+}
