@@ -1,0 +1,32 @@
+{
+  "planos": [
+    {
+      "id_plano": 1,
+      "jogo": "Valorant",
+      "nivel": "Intermediário",
+      "foco": "Mira e tomada de decisão",
+      "duracao_minutos": 45,
+      "rotina": [
+        "10 min de aquecimento de mira",
+        "15 min de treino de tracking e flick",
+        "10 min de estudo de posicionamento por mapa",
+        "10 min de revisão de uma partida recente"
+      ],
+      "meta_semanal": "Melhorar KDA médio em 10% e reduzir mortes por posicionamento ruim"
+    },
+    {
+      "id_plano": 2,
+      "jogo": "League of Legends",
+      "nivel": "Intermediário",
+      "foco": "Farm e posicionamento",
+      "duracao_minutos": 40,
+      "rotina": [
+        "10 min de treino de last hit",
+        "10 min de revisão de fase de rotas",
+        "10 min de análise de team fights",
+        "10 min de estudo do meta atual"
+      ],
+      "meta_semanal": "Aumentar CS por minuto e reduzir mortes evitáveis"
+    }
+  ]
+}
