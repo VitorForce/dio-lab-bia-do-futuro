@@ -30,3 +30,7 @@ ollana serve
 # 3. Rodar o app
 streamlit run app.py
 ```
+
+## Evidência de execução 
+
+<img width="1289" height="885" alt="image" src="https://github.com/user-attachments/assets/602b7d9e-0e45-4c42-b5e2-0564640de910" />
