@@ -1,149 +1,145 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🎮 Fallen IA (Professor) - GameCoach AI
 
-## Contexto
+O **Fallen IA (Professor)** é um agente inteligente desenvolvido para atuar como um coach de jogos eletrônicos, ajudando jogadores a evoluírem com base em dados, estratégias e no meta atual dos jogos.
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+O projeto foi construído utilizando conceitos de **IA, prompts estruturados e base de conhecimento (JSON/CSV)**.
 
 ---
 
-## O Que Você Deve Entregar
+## 🚀 Objetivo
 
-### 1. Documentação do Agente
+Criar um agente capaz de:
 
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+- Analisar o perfil do jogador
+- Identificar pontos fortes e fracos
+- Considerar o meta atual dos jogos
+- Gerar planos de treino personalizados
+- Ajudar na evolução dentro de jogos competitivos
 
 ---
 
-### 2. Base de Conhecimento
+## 🧠 Como funciona
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+O agente utiliza:
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+- **System Prompt estruturado** (com regras e exemplos)
+- **Base de conhecimento local (`data/`)**
+- **Leitura de arquivos JSON e CSV**
+- **Lógica em Python para contextualização**
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
+Fluxo:
 
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
-
----
-
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+1. Usuário envia uma pergunta
+2. Sistema identifica o jogador e o jogo
+3. Dados são carregados da pasta `data`
+4. O agente gera uma resposta personalizada como coach
 
 ---
 
-### 4. Aplicação Funcional
+## 📁 Estrutura do Projeto
 
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
+```bash
+.
+├── data/
+│   ├── perfil_jogador.json
+│   ├── historico_partidas.csv
+│   ├── patch_notes.json
+│   ├── meta_atual.json
+│   ├── planos_treino.json
+│   └── estatisticas_jogos.csv
 │
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+├── gamecoach_app.py
+├── requirements.txt
+└── README.md
 ```
 
+🗂️ Base de Conhecimento
+
+A pasta data/ contém dados utilizados pelo agente:
+
+- Perfil do jogador
+- Histórico de partidas
+- Meta atual dos jogos
+- Patch notes
+- Planos de treino
+- Estatísticas
+
+Esses dados permitem respostas mais precisas, contextualizadas e personalizadas.
 ---
 
-## Dicas Finais
+🤖 Prompt do Agente
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+O agente segue um prompt estruturado com:
+
+- Regras de segurança (não inventar informações)
+- Uso de dados reais
+- Adaptação ao jogador
+- Formato padrão de resposta (diagnóstico, treino, foco)
+
+Também utiliza Few-Shot Prompting para reduzir erros e melhorar consistência.
+
+---
+
+🧪 Avaliação
+
+O agente foi testado com base em:
+
+- Assertividade
+- Coerência
+- Personalização
+- Segurança (anti-alucinação)
+
+Cenários testados:
+
+- Evolução de ranking
+- Consulta de meta
+- Perguntas fora do escopo
+- Falta de contexto
+
+---
+
+🎯 Exemplo de Uso
+
+Entrada:
+
+- Sou Ouro 2 no Valorant, como posso subir de elo?
+
+Saída:
+
+- Diagnóstico do jogador
+- Análise do meta
+- Pontos de melhoria
+- Plano de treino
+- Foco para próxima partida
+
+---
+
+⚠️ Limitações
+- Não acessa dados em tempo real sem integração externa
+- Não substitui coaches profissionais
+- Não garante resultados ou subida de ranking
+-Não utiliza ou incentiva práticas ilegais (cheats)
+
+---
+
+💡 Diferencial
+- Personalização baseada em dados
+- Estrutura de resposta profissional
+- Fácil expansão para novos jogos
+- Integração simples com APIs de IA
+
+---
+👨‍💻 Autor
+
+Vitor Freitas
+Projeto desenvolvido como laboratório de IA aplicada a jogos.
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![AI](https://img.shields.io/badge/AI-GameCoach-purple)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+![Repo Size](https://img.shields.io/github/repo-size/VitorForce/dio-lab-bia-do-futuro)
+![Last Commit](https://img.shields.io/github/last-commit/VitorForce/dio-lab-bia-do-futuro)
+![Stars](https://img.shields.io/github/stars/VitorForce/dio-lab-bia-do-futuro)
+![Forks](https://img.shields.io/github/forks/VitorForce/dio-lab-bia-do-futuro)
